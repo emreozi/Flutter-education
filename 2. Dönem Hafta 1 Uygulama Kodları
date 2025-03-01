@@ -1,0 +1,146 @@
+//////////////////////////////////////////////////////////////////////////UYGULAMA-2///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Container Uygulaması"),
+        ),
+        body: Center(
+          child: Container(
+            height: 300.0,
+            width: 300.0,
+            color: Colors.red,
+            child: Center(
+              child: Text(
+                'Container Kullanıyorum',
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+//////////////////////////////////////////////////////////////////////////UYGULAMA-3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home:Scaffold(
+      appBar: AppBar(
+        title: Text("Column içinde Container Uygulaması"),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(15.0),
+        child:Column(children: [Expanded(child: Container(
+          color:Colors.amber, child:Center(child:Text("ad", style:TextStyle(color: Colors.red),
+            ),
+                    ),
+        ),
+          ),
+          const SizedBox(height: 10.0),
+       Expanded(child: Container(
+          color:Colors.blue, child:Center(child:Text("soyad",
+          ),
+          ),
+        ),
+        ),
+          SizedBox(height:10.0,),
+         Expanded(child: Container(
+          color:Colors.green, child:Center(child:Text("yas",
+          ),
+          ),
+        ),
+             ),
+        ],
+            ),
+    ),    
+              ),
+  ),
+  );
+  }
+  //////////////////////////////////////////////////////////////////////////UYGULAMA-4///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+home:Scaffold(
+      appBar: AppBar(
+               title: const Text("Container Uygulamaları"),
+      ),
+     body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Center(
+        child: Row(
+          children: [
+            Container(
+              color: Colors.blue,
+              width: 200,
+              height: 200,
+              alignment: Alignment.center,
+              child: const Text("ad1",style: TextStyle(fontSize: 20,color: Colors.white),),
+            ),
+            const SizedBox(width: 15.0,),
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 200,
+              alignment: Alignment.center,
+              child: const Text("ad2",style: TextStyle(fontSize: 20,color: Colors.white),),
+            ),
+            const SizedBox(width: 15.0,),
+            Container(
+              color: Colors.green,
+              width: 200,
+              height: 200,
+                 alignment: Alignment.center,
+                 child: const Text("ad3",style: TextStyle(fontSize: 20,color: Colors.white),),
+                 )
+          ],
+          
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+    ),
+),
+),
+    ),
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
